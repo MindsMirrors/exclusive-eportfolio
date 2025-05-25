@@ -39,20 +39,20 @@
                         link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggle_modal()">
                     <a href="#"class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                      <a href="#"class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                     ">
-                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    <i class="fa-solid fa-circle-half-stroke"></i>
                     </a>
                 </li>
             </ul>
@@ -66,7 +66,7 @@
                     strong passion for building web applications 
                     with great user experiences. 
                     <br>
-                    Here's a bit more <b class="green">about me.</b>
+                    Here's a bit more <b class="green click" onclick="toggle_modal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="https://google.com" target="blank" class="social__link click">
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggle_modal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -124,6 +124,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fa-solid fa-xmark modal__exit click" onclick="toggle_modal()"></i>
                 <h3 class="modal__title--contact">
                      Let's have a chat!
                 </h3>
@@ -154,7 +155,6 @@
                     Thanks for the message! Looking forward to speaking with you soon.
                 </div>
             </div>
-            <i class="fa-solid fa-xmark modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
